@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://dozer.sourceforge.net"
+          xsi:schemaLocation="http://dozer.sourceforge.net
+          http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+    <mapping map-id="Route_RouteEntity">
+        <class-a>com.airlinesticketingbackend.dto.airport.Route</class-a>
+        <class-b>com.airlinesticketingbackend.entity.flight.RouteEntity</class-b>
+    </mapping>
+
+    <mapping map-id="AirlineCompanyEntity_AirlineCompany">
+        <class-a>com.airlinesticketingbackend.entity.airport.AirlineCompanyEntity</class-a>
+        <class-b>com.airlinesticketingbackend.dto.airport.AirlineCompany</class-b>
+        <field>
+            <a>airlineCompanyId</a>
+            <b>companyId</b>
+        </field>
+        <field>
+            <a>name</a>
+            <b>airlineCompanyName</b>
+        </field>
+    </mapping>
+
+    <mapping map-id="Customer_CustEntity">
+        <class-a>com.airlinesticketingbackend.entity.cust.CustEntity</class-a>
+        <class-b>com.airlinesticketingbackend.dto.cust.Customer</class-b>
+        <field>
+            <a>custId</a>
+            <b>customerId</b>
+        </field>
+        <field>
+            <a>custCode</a>
+            <b>customerCode</b>
+        </field>
+        <field>
+            <a>statusId</a>
+            <b>customerStatusId</b>
+        </field>
+        <field>
+            <a>username</a>
+            <b>uname</b>
+        </field>
+        <field>
+            <a>firstName</a>
+            <b>frstName</b>
+        </field>
+        <field>
+            <a>lastName</a>
+            <b>lstName</b>
+        </field>
+        <field>
+            <a>fullName</a>
+            <b>fllName</b>
+        </field>
+        <field>
+            <a>email</a>
+            <b>mail</b>
+        </field>
+    </mapping>
+
+    <mapping map-id="TypeEntity_TypeObject">
+        <class-a>com.airlinesticketingbackend.entity.general.TypeEntity</class-a>
+        <class-b>com.airlinesticketingbackend.dto.general.TypeObject</class-b>
+        <field>
+            <a>typeId</a>
+            <b>id</b>
+        </field>
+        <field>
+            <a>shrtCode</a>
+            <b>shortCode</b>
+        </field>
+        <field>
+            <a>desc</a>
+            <b>description</b>
+        </field>
+    </mapping>
+
+    <mapping map-id="StatusEntity_Status">
+        <class-a>com.airlinesticketingbackend.entity.general.StatusEntity</class-a>
+        <class-b>com.airlinesticketingbackend.dto.general.Status</class-b>
+        <field>
+            <a>statusId</a>
+            <b>id</b>
+        </field>
+        <field>
+            <a>desc</a>
+            <b>description</b>
+        </field>
+        <field>
+            <a>entCodeName</a>
+            <b>entityCodeName</b>
+        </field>
+        <field>
+            <a>entName</a>
+            <b>entityName</b>
+        </field>
+    </mapping>
+
+    <mapping map-id="UserEntity_User">
+        <class-a>com.airlinesticketingbackend.entity.user.UserEntity</class-a>
+        <class-b>com.airlinesticketingbackend.dto.user.User</class-b>
+        <field>
+            <a>firstName</a>
+            <b>fname</b>
+        </field>
+        <field>
+            <a>lastName</a>
+            <b>lname</b>
+        </field>
+        <field>
+            <a>username</a>
+            <b>uname</b>
+        </field>
+        <field>
+            <a>email</a>
+            <b>mail</b>
+        </field>
+    </mapping>
+
+    <mapping map-id="AirlineCompany_AirlineCompanyEntity">
+        <class-a>com.airlinesticketingbackend.dto.airport.AirlineCompany</class-a>
+        <class-b>com.airlinesticketingbackend.entity.airport.AirlineCompanyEntity</class-b>
+        <field>
+            <a>companyId</a>
+            <b>airlineCompanyId</b>
+        </field>
+        <field>
+            <a>airlineCompanyName</a>
+            <b>name</b>
+        </field>
+    </mapping>
+
+    <mapping map-id="AddressEntity_Address">
+        <class-a>com.airlinesticketingbackend.entity.address.AddressEntity</class-a>
+        <class-b>com.airlinesticketingbackend.dto.address.Address</class-b>
+        <field>
+            <a>addrId</a>
+            <b>addressId</b>
+        </field>
+        <field>
+            <a>country</a>
+            <b>countryName</b>
+        </field>
+        <field>
+            <a>province</a>
+            <b>provinceName</b>
+        </field>
+    </mapping>
+
+    <mapping map-id="AirportEntity_SearchAirlineResponse">
+        <class-a>com.airlinesticketingbackend.entity.airport.AirportEntity</class-a>
+        <class-b>com.airlinesticketingbackend.dto.airport.SearchAirlineResponse</class-b>
+        <field>
+            <a>airportId</a>
+            <b>airlineId</b>
+        </field>
+        <field>
+            <a>name</a>
+            <b>airportName</b>
+        </field>
+        <field map-id="AddressEntity_Address">
+            <a>addressEntity</a>
+            <b>address</b>
+        </field>
+    </mapping>
+
+    <mapping map-id="RouteEntity_Route">
+        <class-a>com.airlinesticketingbackend.entity.flight.RouteEntity</class-a>
+        <class-b>com.airlinesticketingbackend.dto.airport.Route</class-b>
+    </mapping>
+
+    <mapping map-id="CreateFlightRequest_FlightEntity">
+        <class-a>com.airlinesticketingbackend.dto.flight.CreateFlightRequest</class-a>
+        <class-b>com.airlinesticketingbackend.entity.flight.FlightEntity</class-b>
+        <field>
+            <a>routeId</a>
+            <b>flightRouteId</b>
+        </field>
+        <field>
+            <a>flightStId</a>
+            <b>flightStId</b>
+        </field>
+        <field>
+            <a>arrivalTime</a>
+            <b>arrivalTime</b>
+        </field>
+    </mapping>
+
+    <mapping map-id="FlightEntity_Flight">
+        <class-a>com.airlinesticketingbackend.entity.flight.FlightEntity</class-a>
+        <class-b>com.airlinesticketingbackend.dto.flight.Flight</class-b>
+        <field map-id="StatusEntity_Status">
+            <a>statusEntity</a>
+            <b>status</b>
+        </field>
+        <field map-id="RouteEntity_Route">
+            <a>routeEntity</a>
+            <b>route</b>
+        </field>
+        <field>
+            <a>flightRouteId</a>
+            <b>routeId</b>
+        </field>
+        <field>
+            <a>arrivalTime</a>
+            <b>arrivalTime</b>
+        </field>
+    </mapping>
+
+    <mapping map-id="CreateReservationRequest_FlightReservationEntity">
+        <class-a>com.airlinesticketingbackend.dto.flight.CreateReservationRequest</class-a>
+        <class-b>com.airlinesticketingbackend.entity.flight.FlightReservationEntity</class-b>
+    </mapping>
+
+    <mapping map-id="FlightReservationEntity_FlightReservationInfo">
+        <class-a>com.airlinesticketingbackend.entity.flight.FlightReservationEntity</class-a>
+        <class-b>com.airlinesticketingbackend.dto.flight.FlightReservationInfo</class-b>
+        <field map-id="StatusEntity_Status">
+            <a>statusEntity</a>
+            <b>status</b>
+        </field>
+        <field map-id="FlightEntity_Flight">
+            <a>flightEntity</a>
+            <b>flight</b>
+        </field>
+    </mapping>
+
+</mappings>
